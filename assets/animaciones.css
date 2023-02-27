@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.hero__info h1 {
+    animation: fade 1s ease-in, slide-up .5s ease-in-out;
+}
+
+.hero__info p {
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+}
+
+.hero__info a {
+    animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+}
+
+.hero__info__img {
+    animation: fade 1s ease-in forwards, slide-up 0.6s ease-in-out;
+}
+
+#about_us,
+#products,
+#contact {
+    animation: fade 0.3s ease-in forwards, slide-up .8s ease-in-out;
+}
+
+.products__popular:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    z-index: 1;
+    background-color: rgb(43, 43, 43);
+}
+
+
+/*Header*/
+/*Para efecto de glassmorphismo cuando abrimos menú hamburguesa y carrito*/
+
+
+.overlay {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    /*Para que quede por encima del resto de las cosas*/
+    /*Efecto*/
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa. */
+
+.show-overlay {
+    display: block;
+}
+
+
+
+/*CARRITO */
+/*Despues de cambiar el carrito en el html y en styles.css , aplicamos una animación en hover*/
+.cart-icon {
+    transition: all 0.2s ease-out;
+}
+
+.cart-icon:hover {
+    color: rgb(126, 169, 183);
+    transition: all 0.2s ease-in;
+}
+
+/*Botones del carrito*/
+.quantity-selector {
+    transition: all 0.2s ease-in;
+}
+
+.quantity-selector:hover {
+    cursor: pointer;
+    background-color: rgb(0, 94, 128);
+    transition: all 0.2s ease-in;
+}
+
+/*Botones comprar(carrito) y add(producto) y BENUCBER(Hero)*/
+.btn-add,
+.hero-info a {
+    transition: all 0.2s ease-out;
+}
+
+
+/* comprar carrito */
+.btn-add:hover {
+    background-color: aqua;
+    transition: all 0.2s ease-in;
+}
+
+/* Boton ver mas de la sección de productos */
+.btn-load {
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}

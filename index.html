@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/animaciones.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PixelDesk</title>
+    <link rel="icon" type="image/png" href="./assets/img/icono.png">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="/assets/img/technology.png" alt="logo" class="header__logo"></a>
+        <nav class="navbar">
+            <div class="menu-label">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="navbar__links">
+                <li><a href="#hero" class="lin">Home</a></li>
+                <li><a href="#about_us" class="lin">Sobre Nosotros</a></li>
+                <li><a href="#products" class="lin">Productos</a></li>
+                <li><a href="#contact" class="lin">Contacto</a></li>
+            </ul>
+
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+
+            <div class="cart">
+                <h2 class="cart-tittle">Carrito</h2>
+                <div class="cart-container"></div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total: </p>
+                    <span class="total"> $</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero__info">
+                <h1>Eleva tu nivel con todo el poder Gamer</h1>
+                <p>Potencia cualquier actividad o proyecto con nuestras Notebooks de ultima generación al mejor precio y
+                    con el mejor financiamiento ! </p>
+                <div class="hero__bottom">
+                    <ul>
+                        <li><a href="./login.html" class="btn btn--login"><span class="btn__span">Iniciar Sesión</span></a></li>
+                        <li><a href="./register.html" class="btn btn--register">Registrarme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <p class="about_us--text">
+                En PixelDesk buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal
+                para sus compras de tecnología. Todos nuestros vendedores se encuentran altamente capacitados para
+                asesorarlo y ofrecerle exactamente lo que necesita.
+            </p>
+        </section>
+        <section id="products">
+            <h2>NUESTROS PRODUCTOS DESTACADOS</h2>
+            <div class="products__div">
+                <div class="categories">
+                    <button class="category active">Todas</button>
+                    <button class="category" data-category="mac">Mac</button>
+                    <button class="category" data-category="asus">Asus</button>
+                    <button class="category" data-category="hp">HP</button>
+                    <button class="category" data-category="lenovo">Lenovo</button>
+                    <button class="category" data-category="otras">Otras</button>
+                </div>
+                <div class="products__container">
+                </div>
+            </div>
+            <button class="btn-load">Ver Más</button>
+        </section>
+        <section id="contact">
+            <h2>CONTACTOS</h2>
+            <div class="contact__direction">
+                <div class="contact__direction__info">
+                    <div class="datos">
+                        <h3>SAN MIGUEL</h3>
+                        <i class="fa-sharp fa-solid fa-location-dot">
+                            <h4>Av. Dr. Ricardo Balbín 486</h4>
+                        </i>
+                        <i class="fa-regular fa-envelope">
+                            <h4>pixeldesk@gmail.com</h4>
+                        </i>
+                        <i class="fa-brands fa-whatsapp">
+                            <h4>1530369708</h4>
+                        </i>
+                    </div>
+                    <div class="social">
+                        <h3>!NUESTRA COMUNIDAD!</h3>
+                        <div class="contact__social">
+                            <a href="#" target="_blank" class="fa-brands fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fa-brands fa-instagram"></a>
+                            <a href="#" target="_blank" class="fa-brands fa-twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="507" height="336" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Av.%20Dr.%20Ricardo%20Balb%C3%ADn%20486,%20San%20Miguel,%20Provincia%20de%20Buenos%20Aires,%20Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://123movies-to.org"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul class="footer__links">
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Trabajá con Nosotros</a></li>
+            </ul>
+        </div>
+        <p class="copyright">Copyright © 2023 <span> PIXELDESK </span> Todos los derechos reservados.</p>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
+
+</body>
+
+</html>

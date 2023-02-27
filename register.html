@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
+    <link rel="stylesheet" href="./assets/login-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="./assets/img/icono.png">
+    <title>Resgistrate</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="/assets/img/technology.png" alt="logo" class="header__logo"></a>
+        <nav class="navbar">
+            <div class="menu-label">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar__links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about_us">Sobre Nosotros</a></li>
+                <li><a href="./index.html#products">Productos</a></li>
+                <li><a href="./index.html#contact">Contacto</a></li>
+            </ul>
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/img/carrito.png" alt="Carrito de compras" class="cart-icon" />
+            </label>
+            <input type="checkbox" id="cart-toggle" />
+            <div class="cart">
+                <h2>Tus NFTs</h2>
+                <div class="cart-item">
+                    <img src="./assets/img/products/Acer-Aspire-3.png" alt="un producto">
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current Bid</p>
+                        <span class="item-price">4.8 ETH</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total: </p>
+                    <span>18.3 ETH</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <form class="form__container">
+            <h1 class="form__title">Crea tu cuenta</h1>
+            <div class="input__form">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Nombre" class="form__input" />
+            </div>
+            <div class="input__form">
+                <label for="apellido"></label>
+                <input type="text" id="apellido" placeholder="Apellido" class="form__input" />
+            </div>
+            <div class="input__form">
+                <label for="dni"></label>
+                <input type="number" id="dni" placeholder="DNI" class="form__input" />
+            </div>
+            <div class="input__form">
+                <label for="correo"></label>
+                <input type="email" id="correo" placeholder="Email" required class="form__input" />
+            </div>
+            <div class="input__form">
+                <label for="telefono"></label>
+                <input type="tel" id="telefono" placeholder="Telefono" class="form__input" />
+            </div>
+            <div class="input__form">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Contraseña" class="form__input" />
+            </div>
+            <a href="../index.html" class="btn btn--submit">Registrate</a>
+            <div class="redirection">
+                ¿Tenes una cuenta?
+                <a href="./login.html">Inicia sesión</a>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer__links">
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Trabajá con Nosotros</a></li>
+            </ul>
+        </div>
+        <p class="copyright">Copyright © 2022 <span> PIXELDESK </span> Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
